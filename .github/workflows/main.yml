@@ -15,9 +15,9 @@ jobs:
     runs-on: [ubuntu-latest]
     steps:
     - uses: actions/checkout@v2
-      
-    - name: Jekyll Action
-      uses: helaili/jekyll-action@master
+    - name: Build and deploy to GitHub Pages
+      uses: EdricChan03/action-build-deploy-ghpages@v2.5.0
+
       
         
         
