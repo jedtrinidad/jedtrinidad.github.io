@@ -1,4 +1,3 @@
 .jekyll-cache
-/_sass/sass
-/_sass/bulma.sass
 /_site/*
+/.github/.jekyll-cache/*
