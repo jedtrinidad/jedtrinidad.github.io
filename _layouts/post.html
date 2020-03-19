@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="section">
+  <div class="box">
+    <h1 class="title">{{ page.title }}</h1>
+    <time datetime="{{ page.date }}" class="subtitle">{{ page.date | date_to_string: "ordinal", "US" }}</time>
+    <div class="content">
+      {{ content }}
+    </div>
+  </div>
+  <div class="box">
+    <nav class="pagination is-centered">
+      {% unless page.previous == null %}
+      <a href="{{ page.previous.url }}" class="pagination-previous">&#10094; {{ page.previous.title }}</a>
+      {% endunless %}
+      {% unless page.next == null %}
+      <a href="{{ page.next.url }}" class="pagination-next">{{ page.next.title }} &#10095;</a>
+      {% endunless %}
+    </nav>
+  </div>
+</div>

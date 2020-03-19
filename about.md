@@ -1,8 +1,6 @@
 ---
-layout: default
+layout: post
 title: "About Me"
 ---
-
-# About Me
-
+#### Hello.
 This is my personal website.
